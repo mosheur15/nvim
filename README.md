@@ -1,4 +1,4 @@
-## my simple neovim
+## my simple neovim setup 
 just clone it inside $HOME/.config folder.
 open neovim anywhere and it'll install everything.
 
