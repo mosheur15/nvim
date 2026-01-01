@@ -11,11 +11,12 @@ end
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
---- ctrl + s = write quit
-map("n", "<C-x>", "<Cmd>wq<CR>", opt)
-map("i", "<C-x>", "<Esc><Cmd>wq<CR>", opt)
+--- ctrl + x = write quit
+--- NOTE: combined with nvim option - confirm
+map("n", "<C-x>", "<Cmd>q<CR>", opt)
+map("i", "<C-x>", "<Esc><Cmd>q<CR>", opt)
 
--- ctrl + s = write quit
+-- ctrl + s = save buffer.
 map("n", "<C-s>", "<Cmd>w<CR>", opt)
 map("i", "<C-s>", "<Esc><Cmd>w<CR>a", opt)
 
@@ -30,4 +31,9 @@ map("i", "<C-f>", "<Esc><Cmd>NvimTreeToggle<CR>")
 -- use arrows in normal mode to move netween buffers.
 map('n', '<Left>', ':BufferLineCyclePrev<CR>', opt)
 map('n', '<Right>', ':BufferLineCycleNext<CR>', opt)
+
+-- twilight 
+map('n', '<A-t>', ':Twilight<CR>', opt)
+map('i', '<A-t>', '<Esc>:Twilight<CR>a', opt)
+
 

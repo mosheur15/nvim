@@ -37,3 +37,11 @@ vim.opt.cursorline = true
 -- color for bufferline plugin 
 vim.opt.termguicolors = true
 
+-- confirm exit
+vim.opt.confirm = true
+
+-- disable annoying swap files.
+vim.opt.swapfile = false
+
+-- undo file content even after reopening nvim.
+vim.opt.undofile = true
