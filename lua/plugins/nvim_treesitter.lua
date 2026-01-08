@@ -18,6 +18,7 @@ return {
         "markdown",
         "markdown_inline",
         "svelte",
+        "rust"
       },
       sync_install = false,
       auto_install = false,
