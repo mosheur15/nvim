@@ -36,4 +36,5 @@ map('n', '<Right>', ':BufferLineCycleNext<CR>', opt)
 map('n', '<A-t>', ':Twilight<CR>', opt)
 map('i', '<A-t>', '<Esc>:Twilight<CR>a', opt)
 
-
+-- show lsp stuff
+map('n', "<A-n>", vim.diagnostic.open_float, opt)
